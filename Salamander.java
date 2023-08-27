@@ -2,7 +2,6 @@ public class Salamander extends Amphibians implements Environment,Feed
 {
     private int numKind;
 
-
     public Salamander (String name, String color, int age, boolean toxic, int numKind)
     {
         this.name = name;

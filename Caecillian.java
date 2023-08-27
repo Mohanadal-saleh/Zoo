@@ -7,10 +7,10 @@ public class Caecillian extends Amphibians implements Environment,Feed{
         this.color = color;
         this.toxic = toxic;
         setNumColor(numColor);
-        printAll();
+        print();
     }
     @Override
-    public void printAll()
+     void printAll()
     {
         System.out.println("The Name is : " + name);
         System.out.println("The Age : " + age);

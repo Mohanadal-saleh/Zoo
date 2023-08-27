@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Animal implements Environment ,Feed{
+public class Animal implements Environment , Feed{
 
     String name;
     String color;
@@ -22,7 +22,7 @@ public class Animal implements Environment ,Feed{
             case "color":
                 System.out.println("The color : " + color);break;
             case "country":
-                System.out.println("His Country : "+Country());break;
+                System.out.println("His Country : "+ Country());break;
             case "weather":
                 System.out.println("Live in Weather : "+ Weather());break;
             case "enviroment":

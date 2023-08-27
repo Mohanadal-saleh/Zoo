@@ -7,9 +7,9 @@ public class Falcon extends Birds  implements Environment,Feed{
         this.color = color;
         this.canFly = canFly;
         setDeepWater(deepWater);
-        printAll();
+        print();
     }
-    private void printAll ()
+     void printAll ()
     {
         System.out.println("The Name is : " + name);
         System.out.println("The Age : " + age);
