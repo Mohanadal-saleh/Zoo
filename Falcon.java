@@ -9,6 +9,7 @@ public class Falcon extends Birds  implements Environment,Feed{
         setDeepWater(deepWater);
         print();
     }
+    @Override
      void printAll ()
     {
         System.out.println("The Name is : " + name);

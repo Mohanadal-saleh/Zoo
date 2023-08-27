@@ -9,7 +9,7 @@ public class Chicken extends Birds implements Environment,Feed{
         setNumEgg(numEgg);
         print();
     }
-
+    @Override
      void printAll ()
     {
         System.out.println("The Name is : " + name);
