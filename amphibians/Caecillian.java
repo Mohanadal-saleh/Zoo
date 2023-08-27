@@ -2,8 +2,6 @@ package amphibians;
 import Main.*;
 public class Caecillian extends Amphibians implements Environment, Feed ,forPrint{
     private int numColor;
-
-    public Caecillian(){}
     public Caecillian(String name, String color, int age, boolean toxic,int numColor) {
         this.setName(name) ;
         this.setAge(age);

@@ -15,7 +15,6 @@ public class Zoo
 {
     static Scanner s = new Scanner(System.in);
     static int choiceGroup, choiceAnimal;
-    static String cc;
 
     public static void Start()
     {
