@@ -1,7 +1,7 @@
 public class Shark extends Fish implements Environment,Feed{
     private int width ;
 
-    public Shark(String shark, String color, int age, boolean Predatory,int width) {
+    public Shark(String name, String color, int age, boolean Predatory,int width) {
         this.name = name;
         this.age = age;
         this.color = color;
