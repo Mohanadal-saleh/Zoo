@@ -23,22 +23,22 @@ public class Caecillian extends Amphibians implements Environment,Feed{
     }
 
     @Override
-    public String Country() {
+    final public String Country() {
         return "brazel";
     }
 
     @Override
-    public String Weather() {
+    final public String Weather() {
         return "hot";
     }
 
     @Override
-    public String enviroment() {
+    final public String enviroment() {
         return "wiadly";
     }
 
     @Override
-    public String Eat() {
+    final public String Eat() {
         return "insect";
     }
 

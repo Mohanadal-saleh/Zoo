@@ -23,22 +23,22 @@ public class Shark extends Fish implements Environment,Feed{
     }
 
     @Override
-    public String Country() {
+    final public String Country() {
         return "amirican";
     }
 
     @Override
-    public String Weather() {
+    final public String Weather() {
         return "cold";
     }
 
     @Override
-    public String enviroment() {
+    final public String enviroment() {
         return "water";
     }
 
     @Override
-    public String Eat() {
+    final public String Eat() {
         return "small fish";
     }
 

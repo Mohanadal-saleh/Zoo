@@ -24,22 +24,22 @@ public class Chicken extends Birds implements Environment,Feed{
     }
 
     @Override
-    public String Country() {
+    final public String Country() {
         return "sudan";
     }
 
     @Override
-    public String Weather() {
+    final public String Weather() {
         return "hot";
     }
 
     @Override
-    public String enviroment() {
+    final public String enviroment() {
         return "gress";
     }
 
     @Override
-    public String Eat() {
+    final public String Eat() {
         return "worms";
     }
 

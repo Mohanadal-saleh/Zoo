@@ -23,27 +23,27 @@ public class Falcon extends Birds  implements Environment,Feed{
     }
 
     @Override
-    void speed() {
+    final void speed() {
         System.out.println("the speed of falcon is 150km");
     }
 
     @Override
-    public String Country() {
+    final public String Country() {
         return "spin";
     }
 
     @Override
-    public String Weather() {
+    final public String Weather() {
         return "hot";
     }
 
     @Override
-    public String enviroment() {
+    final public String enviroment() {
         return "on mounten";
     }
 
     @Override
-    public String Eat() {
+    final public String Eat() {
         return "meat";
     }
 

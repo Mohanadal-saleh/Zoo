@@ -24,22 +24,22 @@ public class Jellyfish extends Fish implements Environment,Feed{
 
 
     @Override
-    public String Country() {
+    final public String Country() {
         return "newziland";
     }
 
     @Override
-    public String Weather() {
+    final public String Weather() {
         return "cold";
     }
 
     @Override
-    public String enviroment() {
+    final public String enviroment() {
         return "water";
     }
 
     @Override
-    public String Eat() {
+    final public String Eat() {
         return "Small fish";
     }
     public void setElctricWh(int elctricWh) {
