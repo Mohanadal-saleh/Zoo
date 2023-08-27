@@ -10,10 +10,10 @@ public class Salamander extends Amphibians implements Environment,Feed
         this.color = color;
         this.toxic = toxic;
         setNumKind(numKind);
-        printAll();
+        print();
     }
-
-    private void printAll ()
+    @Override
+    public void printAll ()
     {
         System.out.println("The Name is : " + name);
         System.out.println("The Age : " + age);

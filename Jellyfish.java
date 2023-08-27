@@ -6,10 +6,10 @@ public class Jellyfish extends Fish implements Environment,Feed{
         this.color = color;
         this.Predatory = Predatory;
         setElctricWh(elctricWh);
-        printAll();
+        print();
     }
-
-    private void printAll ()
+    @Override
+     void printAll ()
     {
         System.out.println("The Name is : " + name);
         System.out.println("The Age : " + age);
@@ -52,3 +52,4 @@ public class Jellyfish extends Fish implements Environment,Feed{
 
 
 }
+

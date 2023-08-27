@@ -7,9 +7,10 @@ public class Frog extends Amphibians implements Environment,Feed{
         this.color = color;
         this.toxic = toxic;
         setJumpLength(jumpLength);
-        printAll();
+        print();
     }
-    private void printAll ()
+    @Override
+    void printAll ()
     {
         System.out.println("The Name is : " + name);
         System.out.println("The Age : " + age);

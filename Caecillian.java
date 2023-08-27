@@ -9,7 +9,8 @@ public class Caecillian extends Amphibians implements Environment,Feed{
         setNumColor(numColor);
         printAll();
     }
-    private void printAll ()
+    @Override
+    public void printAll()
     {
         System.out.println("The Name is : " + name);
         System.out.println("The Age : " + age);

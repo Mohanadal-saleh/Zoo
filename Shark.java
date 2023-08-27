@@ -7,9 +7,10 @@ public class Shark extends Fish implements Environment,Feed{
         this.color = color;
         this.Predatory = Predatory;
         setWidth(width);
-        printAll();
+        print();
     }
-    private void printAll ()
+    @Override
+    void printAll ()
     {
         System.out.println("The Name is : " + name);
         System.out.println("The Age : " + age);

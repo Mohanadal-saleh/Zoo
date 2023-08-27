@@ -7,9 +7,10 @@ public class Octopus extends Fish implements Environment,Feed{
         this.color = color;
         this.Predatory = Predatory;
         setNumLegs(numLegs);
-        printAll();
+        print();
     }
-    private void printAll ()
+    @Override
+    void printAll ()
     {
         System.out.println("The Name is : " + name);
         System.out.println("The Age : " + age);
