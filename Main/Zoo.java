@@ -60,7 +60,7 @@ public class Zoo
         System.out.println("2- Frog");
         System.out.println("3- Salamander");
         Animal ceacillian = new Caecillian("caecillian", "black", 20, true,4);
-        Animal frog = new Frog("frog", "green", 16, false,1);
+        Animal frog = new Frog("frog", "green", 16, false,50,10);
         Animal salamander = new Salamander("salamander", "varicolored", 20, false,10);
         choiceAnimal = s.nextInt();
         switch (choiceAnimal)

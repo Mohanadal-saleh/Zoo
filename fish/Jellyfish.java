@@ -43,6 +43,7 @@ public class Jellyfish extends Fish implements Environment, Feed ,forPrint{
     final public String Eat() {
         return "Small fish";
     }
+
     public void setElctricWh(int elctricWh) {
         this.elctricWh = elctricWh;
     }
