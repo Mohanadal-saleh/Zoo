@@ -3,7 +3,7 @@ import Main.*;
 public class Caecillian extends Amphibians implements Environment, Feed ,forPrint{
     private int numColor;
     public Caecillian(String name, String color, int age, boolean toxic,int numColor) {
-        this.setName(name); ;
+        this.setName(name);
         this.setAge(age);
         this.setColor(color);
         this.toxic = toxic;
