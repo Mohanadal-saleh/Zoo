@@ -11,25 +11,48 @@ public class Animal implements Environment, Feed ,forPrint{
     Scanner s = new Scanner(System.in);
     public void print(){
         System.out.println("what are you wanna know ?");
-        System.out.println("Name / age / color /country/weather/ all info");
-        String open = s.next();
+        System.out.println("1-Name / 2-age / 3-color / 4-country /5-weather/ 6- all info");
+        int open = s.nextInt();
         switch (open){
-            case "name":
-                System.out.println("The Name is : " + name); Zoo.Start();break;
-            case "age":
-                System.out.println("The Age : " + age);Zoo.Start();break;
-            case "color":
-                System.out.println("The color : " + color);Zoo.Start();break;
-            case "country":
-                System.out.println("His Country : "+ Country());Zoo.Start();break;
-            case "weather":
-                System.out.println("Live in Weather : "+ Weather());Zoo.Start();break;
-            case "enviroment":
-                System.out.println("His Enviroment : "+ enviroment());Zoo.Start();break;
-            case "eat":
-                System.out.println("Main.Feed on : "+Eat());Zoo.Start();break;
-            case "info":
+            case 1:
+                System.out.println("The Name is : " + name );
+                System.out.println();
+                System.out.println();
+                Zoo.Start();break;
+            case 2:
+                System.out.println("The Age : " + age);
+                System.out.println();
+                System.out.println();
+                Zoo.Start();break;
+            case 3:
+                System.out.println("The color : " + color);
+                System.out.println();
+                System.out.println();
+                Zoo.Start();break;
+            case 4:
+                System.out.println("His Country : "+ Country());
+                System.out.println();
+                System.out.println();
+                Zoo.Start();break;
+            case 5:
+                System.out.println("Live in Weather : "+ Weather());
+                System.out.println();
+                System.out.println();
+                Zoo.Start();break;
+            case 8:
+                System.out.println("His Enviroment : "+ enviroment());
+                System.out.println();
+                System.out.println();
+                Zoo.Start();break;
+            case 7:
+                System.out.println("Feed on : "+Eat());
+                System.out.println();
+                System.out.println();
+                Zoo.Start();break;
+            case 6:
                 printAll();
+                System.out.println();
+                System.out.println();
                 Zoo.Start();break;
             default:
                 System.out.println("the value is not valid");

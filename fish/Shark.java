@@ -9,7 +9,6 @@ public class Shark extends Fish implements Environment, Feed ,forPrint{
         this.setColor(color);
         this.Predatory = Predatory;
         setWidth(width);
-        print();
     }
     @Override
     public void printAll()
@@ -17,11 +16,11 @@ public class Shark extends Fish implements Environment, Feed ,forPrint{
         System.out.println("The Name is : " + getName());
         System.out.println("The Age : " + getAge());
         System.out.println("The color : " + getColor());
-        System.out.println("if The Main.Animal is Preadatory : " + Predatory);
+        System.out.println("if The Animal is Preadatory : " + Predatory);
         System.out.println("His Country : "+Country());
         System.out.println("Live in Weather : "+ Weather());
         System.out.println("His Enviroment : "+ enviroment());
-        System.out.println("Main.Feed on : "+Eat());
+        System.out.println("Feed on : "+Eat());
         System.out.println("His width : "+getWidth());
 
     }

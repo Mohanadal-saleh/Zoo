@@ -9,7 +9,6 @@ public class Falcon extends Birds implements Environment, Feed ,forPrint{
         this.setColor(color);
         this.canFly = canFly;
         setDeepWater(deepWater);
-        print();
     }
     @Override
     public void printAll()
@@ -21,7 +20,7 @@ public class Falcon extends Birds implements Environment, Feed ,forPrint{
         System.out.println("His Country : "+Country());
         System.out.println("Live in Weather : "+ Weather());
         System.out.println("His Enviroment : "+ enviroment());
-        System.out.println("Main.Feed on : "+Eat());
+        System.out.println("Feed on : "+Eat());
         System.out.println("the length of deep water : "+ getDeepWater());
     }
 

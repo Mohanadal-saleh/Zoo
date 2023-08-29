@@ -8,7 +8,6 @@ public class Gull extends Birds implements Environment, Feed ,forPrint{
         this.setColor(color);
         this.canFly = canFly;
         this.setWeight(weight);
-        print();
     }
     @Override
     public void printAll()

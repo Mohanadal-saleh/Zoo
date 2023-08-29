@@ -9,7 +9,6 @@ public class Frog extends Amphibians implements Environment, Feed ,forPrint{
         this.setColor(color);
         this.toxic = toxic;
         setJumpLength(jumpLength);
-        print();
     }
     @Override
     public void printAll()

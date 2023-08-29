@@ -9,7 +9,6 @@ public class Octopus extends Fish implements Environment, Feed ,forPrint{
         this.setColor(color);
         this.Predatory = Predatory;
         setNumLegs(numLegs);
-        print();
     }
     @Override
     public void printAll()
@@ -21,7 +20,7 @@ public class Octopus extends Fish implements Environment, Feed ,forPrint{
         System.out.println("His Country : "+Country());
         System.out.println("Live in Weather : "+ Weather());
         System.out.println("His Enviroment : "+ enviroment());
-        System.out.println("Main.Feed on : "+Eat());
+        System.out.println("Feed on : "+Eat());
         System.out.println("Number of legs : "+getNumLegs());
     }
 

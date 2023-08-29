@@ -8,7 +8,6 @@ public class Chicken extends Birds implements Environment, Feed , forPrint {
         this.setColor(color);
         this.canFly = canFly;
         setNumEgg(numEgg);
-        print();
     }
     @Override
     public void printAll()
@@ -20,7 +19,7 @@ public class Chicken extends Birds implements Environment, Feed , forPrint {
         System.out.println("His Country : "+Country());
         System.out.println("Live in Weather : "+ Weather());
         System.out.println("His Enviroment : "+ enviroment());
-        System.out.println("Main.Feed on : "+Eat());
+        System.out.println("Feed on : "+Eat());
         System.out.println("the number of egg : "+ getNumEgg());
     }
 

@@ -3,12 +3,11 @@ import Main.*;
 public class Caecillian extends Amphibians implements Environment, Feed ,forPrint{
     private int numColor;
     public Caecillian(String name, String color, int age, boolean toxic,int numColor) {
-        this.setName(name) ;
+        this.setName(name); ;
         this.setAge(age);
         this.setColor(color);
         this.toxic = toxic;
         setNumColor(numColor);
-        print();
     }
     @Override
     public void printAll()
@@ -19,8 +18,8 @@ public class Caecillian extends Amphibians implements Environment, Feed ,forPrin
         System.out.println("if the Ceacillian is toxic : " + toxic);
         System.out.println("His Country : "+Country());
         System.out.println("Live in Weather : "+ Weather());
-        System.out.println("His Main.Environment : "+ enviroment());
-        System.out.println("Main.Feed on : "+Eat());
+        System.out.println("Environment : "+ enviroment());
+        System.out.println("Feed on : "+Eat());
         System.out.println("The number of his color : "+getNumColor());
     }
 

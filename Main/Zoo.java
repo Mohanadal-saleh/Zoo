@@ -21,7 +21,7 @@ public class Zoo
         System.out.println("Enter your choice :");
         System.out.println("1- for fish");
         System.out.println("2- for birds");
-        System.out.println("3- for amphibians.Amphibians");
+        System.out.println("3- for Amphibians");
         choiceGroup = s.nextInt();
         switch (choiceGroup)
         {
@@ -36,15 +36,18 @@ public class Zoo
     private static void chooseFish ()
     {
         System.out.println("Enter your choice :");
-        System.out.println("1- fish.Jellyfish");
-        System.out.println("2- fish.Shark");
-        System.out.println("3- fish.Octopus");
+        System.out.println("1- Jellyfish");
+        System.out.println("2- Shark");
+        System.out.println("3- Octopus");
+        Animal jellyfish = new Jellyfish("jellyfish", "white", 3, false ,600);
+        Animal shark = new Shark("shark", "white", 100, true,3);
+        Animal octopus = new Octopus("fish.Octopus", "white", 5, true,8);
         choiceAnimal = s.nextInt();
         switch (choiceAnimal)
         {
-            case 1 : new Jellyfish("jellyfish", "white", 3, false ,600);break;
-            case 2 : new Shark("shark", "white", 100, true,3);break;
-            case 3 : new Octopus("fish.Octopus", "white", 5, true,8);break;
+            case 1 : printAnimal(jellyfish); break;
+            case 2 : printAnimal(shark);break;
+            case 3 : printAnimal(octopus);break;
             default : System.out.println("the number is not valid!!");
             chooseFish();
         }
@@ -53,15 +56,18 @@ public class Zoo
     static void chooseAmphibians ()
     {
         System.out.println("Enter your choice :");
-        System.out.println("1- amphibians.Caecillian");
-        System.out.println("2- amphibians.Frog");
-        System.out.println("3- amphibians.Salamander");
+        System.out.println("1- Caecillian");
+        System.out.println("2- Frog");
+        System.out.println("3- Salamander");
+        Animal ceacillian = new Caecillian("caecillian", "black", 20, true,4);
+        Animal frog = new Frog("frog", "green", 16, false,1);
+        Animal salamander = new Salamander("salamander", "varicolored", 20, false,10);
         choiceAnimal = s.nextInt();
         switch (choiceAnimal)
         {
-            case 1 : new Caecillian("caecillian", "black", 20, true,4);break;
-            case 2 : new Frog("frog", "green", 16, false,1);break;
-            case 3 : new Salamander("salamander", "varicolored", 20, false,10);break;
+            case 1 : printAnimal(ceacillian);break;
+            case 2 : printAnimal(frog);break;
+            case 3 :printAnimal(salamander);break;
             default : System.out.println("the number is not valid!!");
             chooseAmphibians();
         }
@@ -70,17 +76,24 @@ public class Zoo
     private static void chooseBird ()
     {
         System.out.println("Enter your choice :");
-        System.out.println("1- bird.Falcon");
-        System.out.println("2- bird.Gull");
-        System.out.println("3- bird.Chicken");
+        System.out.println("1- Falcon");
+        System.out.println("2- Gull");
+        System.out.println("3- Chicken");
+        Animal falcon = new Falcon("falcon", "brown", 6, true,1);
+        Animal gull = new Gull("gull", "white", 15, true, 3);
+        Animal chicken = new Chicken("chicken", "white", 1, false,8);
         choiceAnimal = s.nextInt();
         switch (choiceAnimal)
         {
-            case 1 : new Falcon("falcon", "brown", 6, true,1);break;
-            case 2 : new Gull("gull", "white", 15, true, 3);break;
-            case 3 : new Chicken("chicken", "white", 1, false,8);break;
+            case 1 :printAnimal(falcon); break;
+            case 2 :printAnimal(gull);break;
+            case 3 :printAnimal(chicken);break;
             default : System.out.println("the number is not valid!!");
             chooseBird();
         }
+
+    }
+    static void printAnimal(Animal s){
+        s.print();
     }
 }

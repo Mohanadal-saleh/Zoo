@@ -11,7 +11,6 @@ public class Salamander extends Amphibians implements Environment, Feed ,forPrin
         this.setColor(color);
         this.toxic = toxic;
         setNumKind(numKind);
-        print();
     }
     @Override
     public void printAll ()
